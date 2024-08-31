@@ -1,0 +1,133 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-vector/gradient-minimalist-background_23-2150012317.jpghttps://img.freepik.com/free-vector/gradient-minimalist-background_23-2149976755.jpghttps://img.freepik.com/free-vector/purple-fluid-background_53876-99561.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+}
+
+.home {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input {
+  flex-grow: 1; 
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px; 
+  outline: none;
+  font-size: 16px;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.button {
+  background-color: #007bff;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 0 5px 5px 0; 
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent; 
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, border-width 0.3s ease;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+  background-color: #f0f0f0;
+  border-color: #007bff; 
+  border-width: 2px; 
+}
+
+.task:hover p,
+.task:hover .checkboxicon,
+.task:hover .taskspan span {
+  color: #007bff; 
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkboxicon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.task p {
+  color: #000; 
+  margin: 0; 
+  flex-grow: 1; 
+  text-align: left; 
+  transition: color 0.3s ease;
+}
+
+.taskspan {
+  display: flex;
+  align-items: center;
+}
+
+.taskspan span {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.task:hover span {
+  color: #007bff; 
+}
